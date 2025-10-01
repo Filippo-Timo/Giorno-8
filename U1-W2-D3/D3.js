@@ -147,17 +147,42 @@ let eyeColor = {
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
 
-for (let i = 0; i < starWarsCharacters.lenght; i++) {
-  switch (eyeColor.blue) {
-    case starWarsCharacters[i].eye_color === "blue":
-      eyeColor.push(starWarsCharacters[1]);
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  switch (starWarsCharacters[i].eye_color) {
+    case "blue":
+      eyeColor.blue.push(starWarsCharacters[i].name);
+      break;
+    case "yellow":
+      eyeColor.yellow.push(starWarsCharacters[i].name);
+      break;
+    case "brown":
+      eyeColor.brown.push(starWarsCharacters[i].name);
+      break;
+    case "red":
+      eyeColor.red.push(starWarsCharacters[i].name);
+      break;
+    default:
+      eyeColor.blue_gray.push(starWarsCharacters[i].name);
       break;
   }
 }
+console.log(eyeColor);
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
+
+let crewMass = 0;
+const mass = [277, 75, 32, 136, 49, 120, 75, 32, 84, 77];
+let i = 0;
+
+while (i < mass.length) {
+  console.log(crewMass);
+  crewMass += mass[i];
+  i++;
+}
+
+console.log("Total crewMass = ", crewMass);
 
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
