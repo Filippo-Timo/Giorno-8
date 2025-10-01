@@ -195,7 +195,7 @@ console.log("Total crewMass = ", crewMass);
 
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
-for (let i = 0; i < starWarsCharacters; i++)
+for (let i = 0; i < starWarsCharacters.length; i++)
   if (starWarsCharacters[i].mass < "500") {
     console.log("Ship is under loaded");
   } else if ("500" < starWarsCharacters[i] < 700) {
