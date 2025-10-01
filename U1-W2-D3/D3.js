@@ -196,15 +196,15 @@ console.log("Total crewMass = ", crewMass);
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
-let spaceshipMass = 277 + 75 + 32 + 136 + 49 + 120 + 75 + 32 + 84 + 77;
+// let spaceshipMass = 277 + 75 + 32 + 136 + 49 + 120 + 75 + 32 + 84 + 77;
 
-if (spaceshipMass < "500") {
+if (crewMass < "500") {
   console.log("Ship is under loaded");
-} else if (500 < spaceshipMass < 700) {
+} else if (crewMass < 700) {
   console.log("Ship is half loaded");
-} else if (700 < spaceshipMass < 900) {
+} else if (crewMass < 900) {
   console.log("Warning: Load is over 700");
-} else if (900 < spaceshipMass < 1000) {
+} else if (crewMass < 1000) {
   console.log("Critical Load: Over 900");
 } else {
   console.log("DANGER! OVERLOAD ALERT: escape from ship now!");
